@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
-from matplotlib.pyplot  import figure
 import seaborn as sns
 
 import pickle
@@ -15,11 +14,6 @@ if app_mode=='Home':
     st.markdown('Dataset :')
     df=pd.read_csv('emp_analytics.csv')
     st.write(df.head())
-
-    st.write(sns.countplot(x="salary", data=df, hue='left'))
-
-
-
 
 
 elif app_mode == 'Predict_Churn':
