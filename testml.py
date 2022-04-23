@@ -31,7 +31,7 @@ elif app_mode == 'Predict_Churn':
         salary_high = 1
     elif salary == 'Low':
         salary_low = 1
-    else :salary_medium = 0
+    else :salary_medium = 1
 
 
     subdata={
